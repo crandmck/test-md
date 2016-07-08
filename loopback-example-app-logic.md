@@ -1,5 +1,7 @@
 # loopback-example-app-logic
 
+NOTE: This is a test.
+
 ```
 $ git clone https://github.com/strongloop/loopback-example-app-logic.git
 $ cd loopback-example-app-logic
