@@ -10,4 +10,6 @@ Let's see if markdown works here:
 - One
 - Two
 - Three
+
+Here's a link [LoopBack docs](http://loopback.io/docs)
 </div>
