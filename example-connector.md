@@ -3,7 +3,7 @@
 Cloudant DB connector for the StrongLoop Loopback framework.
 
 <div class="gh-only">
-For more information, see the [LoopBack documentation](http://loopback.io/doc/en/lb2/Cloudant-connector).
+For more information, see the <a href="http://loopback.io/doc/en/lb2/Cloudant-connector">LoopBack documentation</a>.
 </div>
 
 ### Key Features
