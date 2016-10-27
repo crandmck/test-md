@@ -1,8 +1,8 @@
 # loopback-connector-db2z
 
-<div class="gh-only">
-<b>PLEASE CREATE ISSUES AT https://github.com/strongloop/loopback/issues</b><br/>
-</div>
+<p class="gh-only">
+<b>PLEASE CREATE ISSUES AT https://github.com/strongloop/loopback/issues</b>
+</p>
 
 
 [IBM® DB2® for z/OS®](https://www-01.ibm.com/software/data/db2/zos/family/) is the database of choice for robust, enterprise-wide solutions handling high-volume workloads.
