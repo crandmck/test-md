@@ -1,7 +1,7 @@
 # loopback-connector-db2z
 
 <div class="gh-only">
-<b>PLEASE CREATE ISSUES AT https://github.com/strongloop/loopback/issues</b>
+<b>PLEASE CREATE ISSUES AT https://github.com/strongloop/loopback/issues</b><br/>
 </div>
 
 
