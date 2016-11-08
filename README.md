@@ -268,11 +268,13 @@ module.exports = function(app, cb) {
 
 ## Examples
 
-The [loopback-example-connector](https://github.com/strongloop/loopback-example-connector/tree/soap) 
+The [loopback-example-connector]
+(https://github.com/strongloop/loopback-example-connector/tree/soap) 
 repository provides several examples in the `soap` branch:
 
 Get stock quotes by symbols: 
-[stock-ws.js](https://github.com/strongloop/loopback-example-connector/blob/soap/stock-ws.js).
+[stock-ws.js]
+(https://github.com/strongloop/loopback-example-connector/blob/soap/stock-ws.js).
 Run with the command:
 
 ```shell
@@ -280,7 +282,8 @@ $ node example/stock-ws
 ```
 
 Get weather and forecast information for a given zip code: 
-[weather-ws.js](https://github.com/strongloop/loopback-connector-soap/blob/master/example/weather-ws.js).
+[weather-ws.js]
+(https://github.com/strongloop/loopback-connector-soap/blob/master/example/weather-ws.js).
 Run with the command:
 
 ```shell
@@ -288,7 +291,8 @@ $ node example/weather-ws
 ```
 
 Expose REST APIs to proxy the SOAP web services: 
-[weather-rest.js](https://github.com/strongloop/loopback-example-connector/blob/soap/weather-rest.js).
+[weather-rest.js]
+(https://github.com/strongloop/loopback-example-connector/blob/soap/weather-rest.js).
 Run with the command:
 
 ```shell
