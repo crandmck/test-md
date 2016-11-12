@@ -74,12 +74,12 @@ The model definition consists of the following properties:
 ## Type Mapping
 
 | LoopBack type | Mapped to SQLite3 type |
-|--|--|
+|-----|-----|
 | Number| Primary key stored as INTEGER, others as REAL |
 | Boolean | INTEGER 1 or 0 |
 | Date | INTEGER (ms since Jan 01 1970 00:00:00 0000) |
 | String | ? |
-| Complex types (GeoPoint, Point, List, Array, Object, sub-models | TEXT in JSON format |
+| Complex types: GeoPoint, Point, List, Array, Object, and sub-models | TEXT in JSON format |
 | JSON | TEXT |
     
 SQLite3 does not enforce types. Any data can be stored in any column regardless of definiton.
