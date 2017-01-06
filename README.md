@@ -14,7 +14,7 @@ You have to use HTML inside this block, not markdown, e.g.
 | `PUT`&nbsp;`/MyModels` | `replaceOrCreate` | `updateOrCreate` |
 | `PUT`&nbsp;`/MyModels/:id` | `replaceById` | `prototype.updateAttributes` |
 | `PATCH`&nbsp;`/MyModels` | `updateOrCreate` | `updateOrCreate` |
-| `PATCH`&nbsp;`/MyModels/:id` | `prototype.updateAttributes` | `prototype.updateAttributes` |
+| <a name="patch1"></a>`PATCH`&nbsp;`/MyModels/:id` | `prototype.updateAttributes` | `prototype.updateAttributes` |
 
 
 # loopback-connector-soap
