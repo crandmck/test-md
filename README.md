@@ -1,6 +1,8 @@
 # test-md
 For testing markdown stuff.
 
+{% include note.html content="In addition to these properties, you can use additional parameters supported by [`node-mysql`](https://github.com/felixge/node-mysql).
+" %}
 
 Something interesting here.
 
