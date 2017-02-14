@@ -51,4 +51,16 @@ Here is an HTML table.
 
 ## Second heading
 
-asdfadsf
+Here is a markdown table.
+
+Property&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Type    | Description
+---------------| --------| --------
+database       | String  | Database name
+schema         | String  | Specifies the default schema name that is used to qualify unqualified database objects in dynamically prepared SQL statements. The value of this property sets the value in the CURRENT SCHEMA special register on the database server. The schema name is case-sensitive, and must be specified in uppercase characters
+username       | String  | DB2 Username
+password       | String  | DB2 password associated with the username above
+hostname       | String  | DB2 server hostname or IP address
+port           | String  | DB2 server TCP port number
+useLimitOffset | Boolean | LIMIT and OFFSET must be configured on the DB2 server before use (compatibility mode)
+supportDashDB  | Boolean | Create ROW ORGANIZED tables to support dashDB.
+
