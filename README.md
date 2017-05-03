@@ -1,3 +1,5 @@
+![http://loopback.io](loopback-logo-sm.png)
+
 ##  Setup
 
 To preview the website locally:
