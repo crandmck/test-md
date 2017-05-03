@@ -1,5 +1,9 @@
 ![http://loopback.io](loopback-logo-sm.png)
 
+xxxx
+
+<a href="http://loopback.io"><img src="loopback-logo-sm.png"></a>
+
 ##  Setup
 
 To preview the website locally:
