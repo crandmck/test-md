@@ -103,7 +103,7 @@ $ lb datasource
 
 When prompted, respond as follows:
 
-1. `Enter the datasource name:``
+1. `Enter the datasource name:`
 <br/>Enter "soapDS".
 1. ` Select the connector for soapDS:`
 <br/>Use your arrow key to scroll down to `SOAP webservices (supported by StrongLoop)` and press Enter.
