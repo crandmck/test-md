@@ -65,7 +65,7 @@ $ npm install -g loopback-cli
 ```
 
 To create this app yourself, follow the steps in this section:
-- [Scaffold the app](#scaffold the app)
+- [Scaffold the app](#scaffold-the-app)
 - [Create a SOAP data source](#create-a-soap-data-source)
 - [Create a periodicTable model](#create-a-periodictable-model)
 - [Add remote methods](#Add-remote-methods)
