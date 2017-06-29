@@ -40,7 +40,18 @@ $ npm install
 In the **Response Body** field, you'll see an XML response from the web service that looks something like this:
     ```
     {
-    "GetAtomicNumberResult": "<NewDataSet>\r\n  <Table>\r\n    <AtomicNumber>26</AtomicNumber>\r\n    <ElementName>Iron</ElementName>\r\n    <Symbol>Fe</Symbol>\r\n    <AtomicWeight>55.847</AtomicWeight>\r\n    <BoilingPoint>3300</BoilingPoint>\r\n    <IonisationPotential>7.9</IonisationPotential>\r\n    <EletroNegativity>1.6400000000000001</EletroNegativity>\r\n    <AtomicRadius>1.17</AtomicRadius>\r\n    <MeltingPoint>1808</MeltingPoint>\r\n    <Density>7874</Density>\r\n  </Table>\r\n</NewDataSet>"
+    "GetAtomicNumberResult": "<NewDataSet>\r\n  
+    <Table>\r\n    <AtomicNumber>26</AtomicNumber>\r\n    
+    <ElementName>Iron</ElementName>\r\n    
+    <Symbol>Fe</Symbol>\r\n    
+    <AtomicWeight>55.847</AtomicWeight>\r\n    
+    <BoilingPoint>3300</BoilingPoint>\r\n    
+    <IonisationPotential>7.9</IonisationPotential>\r\n    
+    <EletroNegativity>1.6400000000000001</EletroNegativity>\r\n    
+    <AtomicRadius>1.17</AtomicRadius>\r\n    
+    <MeltingPoint>1808</MeltingPoint>\r\n    
+    <Density>7874</Density>\r\n  
+    </Table>\r\n</NewDataSet>"
     }
     ```
 
