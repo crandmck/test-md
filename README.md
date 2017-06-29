@@ -57,7 +57,7 @@ $ npm install
 
 The app includes two other files `periodictable-ws.js` and `stock-ws.js` that illustrate other ways of programmatically calling a SOAP web service.  NOTE: the [stock quote web service](http://www.webservicex.net/stockquote.asmx) may not be consistently available.
 
-## Recreating the app
+## Recreate the app
 
 **Prerequisites**: Follow the steps in the [Installation documentation](http://loopback.io/doc/en/lb3/Installation.html) to install the LoopBack CLI.  In a nutshell:
 ```
@@ -67,7 +67,7 @@ $ npm install -g loopback-cli
 To create this app yourself, follow the steps in this section.
 
 
-## Scaffold the app
+### Scaffold the app
 
 Scaffold a new application.  Enter this command:
 
@@ -88,7 +88,7 @@ The tool will create a directory with that name (`my-soap-demo`).
 
 The tool will then scaffold the app and install all the dependencies from npm.
 
-## Create a SOAP data source
+### Create a SOAP data source
 
 Go into the app root directory:
 ```
@@ -120,7 +120,7 @@ When prompted, respond as follows:
 1. `Expose operations as REST APIs: (Y/n)`
 <br/>Press Enter to accept the default (yes).
 1. `Maps WSDL binding operations to Node.js methods:`
-<br/>Copy and paste this stringified JSON:
+<br/>Copy and paste the stringified JSON below.  The JSON defines the service, port, and operation for each operation that will be called in the SOAP service.
     ```
     {"getAtomicWeight":{"service":"periodictable","port":"periodictableSoap","operation":"GetAtomicWeight"},"getAtomicNumber":{"service":"periodictable","port":"periodictableSoap","operation":"GetAtomicNumber"}}
     ```
@@ -130,7 +130,7 @@ When prompted, respond as follows:
 
 The data source generator then creates an entry for the data source in the `server/datasources.json` file and installs all the necessary dependencies.
 
-## Create a periodicTable model
+### Create a periodicTable model
 
 Use the [model generator](http://loopback.io/doc/en/lb3/Model-generator.html) to add a model to represent the periodic Table web service.  Enter this command:
 
@@ -140,17 +140,17 @@ $ lb model
 
 When prompted, respond as follows:
 
-- `Enter the model name:`  Enter "periodicTable".
-- `Enter the model name: periodicTable` Select `soapDS` that you previously created.
-- `? Select model's base class` Select `Model`.
-- `? Expose periodicTable via the REST API? (Y/n)`  Press Enter to accept the default (yes).
-- `? Custom plural form (used to build REST URL):` Press Enter for no custom plural.
-- `? Common model or server only?` Select `server` because this will be a server-only model.
-- `? Property name:` Press Enter when first prompted, because this model will not have any properties.
+1. `Enter the model name:`  <br/>Enter "periodicTable".
+1. `Enter the model name: periodicTable` <br/>Select `soapDS` that you previously created.
+1. `Select model's base class` Select `Model`.
+1. `Expose periodicTable via the REST API? (Y/n)`  <br/>Press Enter to accept the default (yes).
+1. `Custom plural form (used to build REST URL):` <br/>Press Enter for no custom plural.
+1. `Common model or server only?` <br/>Select `server` because this will be a server-only model.
+1. `Property name:` <br/>Press Enter when first prompted, because this model will not have any properties.
 
 The tool will create two files in the `server` directory: `periodicTable.json` and `periodicTable.js`.
 
-## Add remote methods
+### Add remote methods
 
 Edit `server/models/periodic-table.js` and add the code shown below to the stubbed-out function.
 
@@ -203,3 +203,12 @@ module.exports = function(Periodictable) {
 
 };
 ```
+
+### Try it out!
+
+Now, run your app:
+```
+node .
+```
+
+Follow the same steps [as before](#run-the-example) and your app should behave the same as the one in this repository.
