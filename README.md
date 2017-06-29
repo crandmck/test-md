@@ -37,7 +37,8 @@ $ npm install
 3. Under the **periodicTable** model, you'll see two endpoints: `GET /periodicTables/GetAtomicNumber` and `GET /periodicTables/GetAtomicWeight`.  
 1. Click on `GetAtomicNumber` and in the **elementName** parameter field, enter the name of an element, for example, "Gold" or "Oxygen".  
 
-In the **Response Body** field, you'll see an XML response from the web service that looks something like this:
+    In the **Response Body** field, you'll see an XML response from the web service that looks something like this:
+
     ```
     {
     "GetAtomicNumberResult": "<NewDataSet>\r\n  
