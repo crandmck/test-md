@@ -79,11 +79,14 @@ $ lb app
 ```
 
 When prompted, respond as follows:
-1. `? What's the name of your application?` Give the app any name you wish, for example "my-soap-demo".
-The tool will create a directory with that name (`my-soap-demo`).
-1. `? Enter name of the directory to contain the project:` Press Enter to accept the default (directory has the same name as the app).
-1. `? Which version of LoopBack would you like to use?` Choose `3.x (current)`
-1. `? What kind of application do you have in mind?` Choose `empty-server (An empty LoopBack API, without any configured models or datasources) `
+1. `? What's the name of your application?` 
+Give the app any name you wish, for example "my-soap-demo".  The tool will create a directory with that name (`my-soap-demo`).
+1. `? Enter name of the directory to contain the project:` 
+Press Enter to accept the default (directory has the same name as the app).
+1. `? Which version of LoopBack would you like to use?` 
+Choose `3.x (current)`
+1. `? What kind of application do you have in mind?` 
+Choose `empty-server (An empty LoopBack API, without any configured models or datasources)`
 
 The tool will then scaffold the app and install all the dependencies from npm.
 
