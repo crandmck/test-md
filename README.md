@@ -35,30 +35,27 @@ $ npm install
 
 2. Open [API Explorer](http://0.0.0.0:3000/explorer) in your web browser.  
 3. Under the **periodicTable** model, you'll see two endpoints: `GET /periodicTables/GetAtomicNumber` and `GET /periodicTables/GetAtomicWeight`.  
-1. Click on `GetAtomicNumber` and in the **elementName** parameter field, enter the name of an element, for example, "Gold" or "Oxygen".  
-
-    In the **Response Body** field, you'll see an XML response from the web service that looks something like this:
+4. Click on `GetAtomicNumber` and in the **elementName** parameter field, enter the name of an element, for example, "Gold" or "Oxygen".  In the **Response Body** field, you'll see an XML response from the web service that looks something like this (NOTE: line feeds have been added in the example below for readability, but in practice the response will be on a single line):
 
     ```
     {
-    "GetAtomicNumberResult": "<NewDataSet>\r\n  
-    <Table>\r\n    <AtomicNumber>26</AtomicNumber>\r\n    
+    "GetAtomicNumberResult": "<NewDataSet>\r\n  <Table>\r\n    
+    <AtomicNumber>26</AtomicNumber>\r\n    
     <ElementName>Iron</ElementName>\r\n    
     <Symbol>Fe</Symbol>\r\n    
     <AtomicWeight>55.847</AtomicWeight>\r\n    
     <BoilingPoint>3300</BoilingPoint>\r\n    
-    <IonisationPotential>7.9</IonisationPotential>\r\n    
-    <EletroNegativity>1.6400000000000001</EletroNegativity>\r\n    
+    <IonisationPotential>7.9</IonisationPotential>\r\n
+    <EletroNegativity>1.6400000000000001</EletroNegativity>\r\n
     <AtomicRadius>1.17</AtomicRadius>\r\n    
     <MeltingPoint>1808</MeltingPoint>\r\n    
-    <Density>7874</Density>\r\n  
-    </Table>\r\n</NewDataSet>"
+    <Density>7874</Density>\r\n  </Table>\r\n</NewDataSet>"
     }
     ```
 
 ### Additional example code
 
-The app includes two other files `periodictable-ws.js` and `stock-ws.js` that illustrate other ways of programmatically calling a SOAP web service.  NOTE: the [stock quote web service](http://www.webservicex.net/stockquote.asmx) may not be consistenly available.
+The app includes two other files `periodictable-ws.js` and `stock-ws.js` that illustrate other ways of programmatically calling a SOAP web service.  NOTE: the [stock quote web service](http://www.webservicex.net/stockquote.asmx) may not be consistently available.
 
 ## Recreating the app
 
@@ -79,23 +76,24 @@ $ lb app
 ```
 
 When prompted, respond as follows:
-1. `? What's the name of your application?` <br/>
-Give the app any name you wish, for example "my-soap-demo".  The tool will create a directory with that name (`my-soap-demo`).
-1. `? Enter name of the directory to contain the project:` <br/>
-Press Enter to accept the default (directory has the same name as the app).
-1. `? Which version of LoopBack would you like to use?` <br/>
-Choose `3.x (current)`
-1. `? What kind of application do you have in mind?` <br/>
-Choose `empty-server (An empty LoopBack API, without any configured models or datasources)`
+- `What's the name of your application?`
+<br/>Give the app any name you wish, for example "my-soap-demo".
+The tool will create a directory with that name (`my-soap-demo`).
+- `Enter name of the directory to contain the project:`
+<br/>Press Enter to accept the default (directory has the same name as the app).
+- `Which version of LoopBack would you like to use?`
+<br/>Choose `3.x (current)`
+- `What kind of application do you have in mind?`
+<br/>Choose `empty-server (An empty LoopBack API, without any configured models or datasources) `
 
 The tool will then scaffold the app and install all the dependencies from npm.
+
+## Create a SOAP data source
 
 Go into the app root directory:
 ```
 $ cd my-soap-demo
 ```
-
-## Create a SOAP data source
 
 Use the [data source generator](http://loopback.io/doc/en/lb3/Data-source-generator.html) to add a SOAP data source to your application.  Enter this command:
 
@@ -103,64 +101,32 @@ Use the [data source generator](http://loopback.io/doc/en/lb3/Data-source-genera
 $ lb datasource
 ```
 
-You'll see this prompt:
-```
-? Enter the datasource name:
-```
+When prompted, respond as follows:
 
-Enter "soapDS".
-
-For this prompt:
-```
-? Select the connector for soapDS:
-```
-Use your arrow key to scroll down to `SOAP webservices (supported by StrongLoop)` and press Enter.
-
-For this prompt:
-```
-? URL to the SOAP web service endpoint:
-```
-
-Copy and paste the URL of the periodic table web service:
-```
-http://www.webservicex.net/periodictable.asmx
-```
-
-For this prompt:
-```
-? HTTP URL or local file system path to the WSDL file:
-```
-
-Copy and paste this URL of the periodic table web service WSDL:
-```
-http://www.webservicex.net/periodictable.asmx?WSDL
-```
-
-For this prompt:
-```
-? Expose operations as REST APIs: (Y/n)
-```
-
-Press Enter to accept the default (yes).
-
-For this prompt:
-```
-? Maps WSDL binding operations to Node.js methods:
-```
-
-Copy and paste this stringified JSON:
-```
-{"getAtomicWeight":{"service":"periodictable","port":"periodictableSoap","operation":"GetAtomicWeight"},"getAtomicNumber":{"service":"periodictable","port":"periodictableSoap","operation":"GetAtomicNumber"}}
-```
-
-NOTE: The JSON you enter must **not** have any line endings, that is, it must be on a single line.
-
-For this prompt:
-```
-? Install loopback-connector-soap@^3.0
-```
-
-Press Enter.
+1. `Enter the datasource name:``
+<br/>Enter "soapDS".
+1. ` Select the connector for soapDS:`
+<br/>Use your arrow key to scroll down to `SOAP webservices (supported by StrongLoop)` and press Enter.
+1. `URL to the SOAP web service endpoint:`
+<br/>Copy and paste the URL of the periodic table web service:
+    ```
+    http://www.webservicex.net/periodictable.asmx
+    ```
+1. `HTTP URL or local file system path to the WSDL file:`
+<br/>Copy and paste this URL of the periodic table web service WSDL:
+    ```
+    http://www.webservicex.net/periodictable.asmx?WSDL
+    ```
+1. `Expose operations as REST APIs: (Y/n)`
+<br/>Press Enter to accept the default (yes).
+1. `Maps WSDL binding operations to Node.js methods:`
+<br/>Copy and paste this stringified JSON:
+    ```
+    {"getAtomicWeight":{"service":"periodictable","port":"periodictableSoap","operation":"GetAtomicWeight"},"getAtomicNumber":{"service":"periodictable","port":"periodictableSoap","operation":"GetAtomicNumber"}}
+    ```
+    NOTE: The JSON you enter must **not** have any line endings, that is, it must be on a single line.
+1. `Install loopback-connector-soap@^3.0`
+<br/>Press Enter to install the connector from npm.
 
 The data source generator then creates an entry for the data source in the `server/datasources.json` file and installs all the necessary dependencies.
 
