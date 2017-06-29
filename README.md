@@ -34,7 +34,10 @@ $ npm install
     ```
 
 2. Open [API Explorer](http://0.0.0.0:3000/explorer) in your web browser.  
-3. Under the **periodicTable** model, you'll see two endpoints: `GET /periodicTables/GetAtomicNumber` and `GET /periodicTables/GetAtomicWeight`.  Click on `GetAtomicNumber` and in the **elementName** parameter field, enter the name of an element, for example, "Gold" or "Oxygen".  In the **Response Body** field, you'll see an XML response from the web service that looks something like this:
+3. Under the **periodicTable** model, you'll see two endpoints: `GET /periodicTables/GetAtomicNumber` and `GET /periodicTables/GetAtomicWeight`.  
+1. Click on `GetAtomicNumber` and in the **elementName** parameter field, enter the name of an element, for example, "Gold" or "Oxygen".  
+
+In the **Response Body** field, you'll see an XML response from the web service that looks something like this:
     ```
     {
     "GetAtomicNumberResult": "<NewDataSet>\r\n  <Table>\r\n    <AtomicNumber>26</AtomicNumber>\r\n    <ElementName>Iron</ElementName>\r\n    <Symbol>Fe</Symbol>\r\n    <AtomicWeight>55.847</AtomicWeight>\r\n    <BoilingPoint>3300</BoilingPoint>\r\n    <IonisationPotential>7.9</IonisationPotential>\r\n    <EletroNegativity>1.6400000000000001</EletroNegativity>\r\n    <AtomicRadius>1.17</AtomicRadius>\r\n    <MeltingPoint>1808</MeltingPoint>\r\n    <Density>7874</Density>\r\n  </Table>\r\n</NewDataSet>"
