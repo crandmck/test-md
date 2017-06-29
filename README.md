@@ -59,13 +59,17 @@ The app includes two other files `periodictable-ws.js` and `stock-ws.js` that il
 
 ## Recreate the app
 
-**Prerequisites**: Follow the steps in the [Installation documentation](http://loopback.io/doc/en/lb3/Installation.html) to install the LoopBack CLI.  In a nutshell:
+**Prerequisites**: If you haven't already done so, follow the [Installation instructions](http://loopback.io/doc/en/lb3/Installation.html) for the LoopBack CLI.  In a nutshell:
 ```
 $ npm install -g loopback-cli
 ```
 
-To create this app yourself, follow the steps in this section.
-
+To create this app yourself, follow the steps in this section:
+- [Scaffold the app](#scaffold the app)
+- [Create a SOAP data source](#create-a-soap-data-source)
+- [Create a periodicTable model](#create-a-periodictable-model)
+- [Add remote methods](#Add-remote-methods)
+- [Try it out!](#Try-it-out)
 
 ### Scaffold the app
 
