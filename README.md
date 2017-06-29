@@ -154,8 +154,7 @@ The tool will create two files in the `server` directory: `periodicTable.json` a
 
 Edit `server/models/periodic-table.js` and add the code shown below to the stubbed-out function.
 
-This code defines two functions, `Periodictable.getAtomicnumber` and `Periodictable.getAtomicweight` and adds them as remote methods to the `Periodictable` model, as described in [Remote methods]
-(https://loopback.io/doc/en/lb3/Remote-methods.html).
+This code defines two functions, `Periodictable.getAtomicnumber` and `Periodictable.getAtomicweight` and adds them as remote methods to the `Periodictable` model, as described in [Remote methods](https://loopback.io/doc/en/lb3/Remote-methods.html).
 
 ```javascript
 'use strict';
