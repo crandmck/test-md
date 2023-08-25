@@ -1,5 +1,5 @@
 
-- [Actor](#actor)]
+- [Actor](#actor)
 - [AssetType](#assettype)
 - [ClaimGeneratorInfo](#claimgeneratorinfo)
 - [DataSource](#datasource)
