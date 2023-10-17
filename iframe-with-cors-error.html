@@ -2,11 +2,11 @@
 
 <p>The iframe SHOULD go to <b>ManifestAssertion</b>.</p>
 
-<iframe src="https://contentauth.github.io/json-manifest-reference/reference-cai" id="content_frame"
+<iframe src="about:blank" id="content_frame"
   height="460px" id="ref_win" width="95%" style="border: 1px solid red;" scrolling="yes">
 </iframe>
 
 <script>
-console.log("HASH IS " + window.location.hash);
-document.getElementById("content_frame").contentWindow.location.hash = window.location.hash.substring(1);
+console.log("IFRAME URL IS " + "https://contentauth.github.io/json-manifest-reference/reference-cai" + window.location.hash);
+document.getElementById("content_frame").contentWindow.location.src = "https://contentauth.github.io/json-manifest-reference/reference-cai" + window.location.hash;
 </script>
