@@ -7,6 +7,6 @@
 
 <script>
 console.log("HASH IS " + window.location.hash);
-document.getElementById("content_frame").contentWindow.location.hash = window.location.hash;
+document.getElementById("content_frame").contentWindow.location.hash = window.location.hash.substring(1);
 </script>
 
