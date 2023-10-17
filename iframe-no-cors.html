@@ -6,7 +6,8 @@
   id="content_frame" width="95%" style="border: 1px solid red;" scrolling="yes"></iframe>
 
 <script>
-console.log("IFRAME URL IS " + "https://crandmck.github.io/test-md/test" + window.location.hash);
-document.getElementById("content_frame").contentWindow.location.src = "https://crandmck.github.io/test-md/test" + window.location.hash;
+const theURL = "https://crandmck.github.io/test-md/test" + window.location.hash
+console.log("The IFRAME URL IS " + theURL);
+document.getElementById("content_frame").contentWindow.location.src = theURL;
 </script>
 
