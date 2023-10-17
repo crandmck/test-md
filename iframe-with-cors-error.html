@@ -8,6 +8,9 @@
 
 <script>
   window.onload = function() {
-  const theURL = "https://contentauth.github.io/json-manifest-reference/reference-cai" + window.location.hash
-  document.getElementById("content_frame").contentWindow.location.src = theURL;
+    console.log("Running onload")
+    const theURL = "https://contentauth.github.io/json-manifest-reference/reference-cai" + window.location.hash;
+    console.log("URL is " + theURL);
+    document.getElementById("content_frame").contentWindow.location.src = theURL;
+  }
 </script>
