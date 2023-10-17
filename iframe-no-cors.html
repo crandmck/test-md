@@ -9,7 +9,7 @@
 window.onLoad = function() {
   const theURL = "https://crandmck.github.io/test-md/test" + window.location.hash
   console.log("The IFRAME URL IS " + theURL);
-  document.getElementById("content_frame").src = theURL;
+  document.getElementById("content_frame").contentWindow.location.src = theURL;
 }
 </script>
 
