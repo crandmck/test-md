@@ -7,6 +7,7 @@
 </iframe>
 
 <script>
-console.log("IFRAME URL IS " + "https://contentauth.github.io/json-manifest-reference/reference-cai" + window.location.hash);
-document.getElementById("content_frame").contentWindow.location.src = "https://contentauth.github.io/json-manifest-reference/reference-cai" + window.location.hash;
+  window.onload = function() {
+  const theURL = "https://contentauth.github.io/json-manifest-reference/reference-cai" + window.location.hash
+  document.getElementById("content_frame").contentWindow.location.src = theURL;
 </script>
