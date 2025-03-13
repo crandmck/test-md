@@ -50,6 +50,6 @@ In this example, TrustMark variant Q is being used to encode the word `mysecret`
 
 ---
 
-[^1] [DECaDE](https://decade.ac.uk/) Centre for the Decentralized Digital Economy, University of Surrey, UK.
+[^1]: [DECaDE](https://decade.ac.uk/) Centre for the Decentralized Digital Economy, University of Surrey, UK.
 
-[^2] [Adobe Research](https://research.adobe.com/), San Jose, CA.
+[^2]: [Adobe Research](https://research.adobe.com/), San Jose, CA.
