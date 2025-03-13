@@ -3,6 +3,9 @@
 The official, open source (MIT licensed) implementation of TrustMark watermarking  for the Content Authenticity Initiative (CAI) as described in  [**TrustMark - Universal Watermarking for Arbitrary Resolution Images**](https://arxiv.org/abs/2311.18297)
 [Tu Bui](https://www.surrey.ac.uk/people/tu-bui)[^1], [Shruti Agarwal](https://research.adobe.com/person/shruti-agarwal/)[^2], [John Collomosse](https://www.collomosse.com)[^1] [^2]
 
+[^1]: [DECaDE](https://decade.ac.uk/) Centre for the Decentralized Digital Economy, University of Surrey, UK.
+
+[^2]: [Adobe Research](https://research.adobe.com/), San Jose, CA.
 
 **This repo contains:**
 `/python` a Python (3.8.5 or higher) implementation of TrustMark for encoding, decoding and removing image watermarks (using PyTorch).  
@@ -50,6 +53,4 @@ In this example, TrustMark variant Q is being used to encode the word `mysecret`
 
 ---
 
-[^1]: [DECaDE](https://decade.ac.uk/) Centre for the Decentralized Digital Economy, University of Surrey, UK.
 
-[^2]: [Adobe Research](https://research.adobe.com/), San Jose, CA.
