@@ -8,6 +8,11 @@ Frequently asked questions for general users and implementors of the TrustMark i
 
 ## General Usage and Adoption
 
+<!-- docusaurus-start -->
+This content will appear only on your Docusaurus site.
+GitHub will ignore it.
+<!-- docusaurus-end -->
+
 ### What is TrustMark?
 TrustMark is an invisible watermarking algorithm. The purpose of TrustMark is to encode an invisible identifier into an image that is machine readable i.e. may be read by software. This contrasts with visible watermarks such as words or logos overlaid on an image that are usually meant to be human readable.
 
